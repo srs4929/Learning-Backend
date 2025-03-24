@@ -12,6 +12,14 @@ dotenv.config(
 );
 console.log("MongoDB URL:", `"${process.env.MONGODB_URL}"`); // Debugging
 connectdb()
+.then(()=>{
+    app.listen(PRCOCESS.env.PORT||8000,()=>{
+       console.log("server is running")
+    })
+})
+.catch((err)=>{
+    console.log("Database connection error",err)
+})
 
 
 /*const app=express()

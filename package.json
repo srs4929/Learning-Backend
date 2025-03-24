@@ -4,11 +4,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-
-   
-
     "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
-
   },
   "author": "",
   "license": "ISC",
@@ -17,12 +13,11 @@
     "nodemon": "^3.1.9"
   },
   "dependencies": {
-
-
+    "cookies": "^0.9.1",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.12.1",
-
     "prettier": "^3.5.3"
   }
 }
